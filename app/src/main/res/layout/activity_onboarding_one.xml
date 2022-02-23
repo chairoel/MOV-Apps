@@ -4,6 +4,77 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/bg_color"
     tools:context=".onboarding.OnboardingOneActivity">
+
+    <ImageView
+        android:id="@+id/ivOB1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/onboarding_one"
+        android:contentDescription="@string/desc" />
+
+    <TextView
+        android:id="@+id/tvNowPlaying"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textStyle="bold"
+        android:text="@string/now_playing"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/ivOB1"
+        app:layout_constraintStart_toStartOf="@+id/ivOB1"
+        app:layout_constraintTop_toBottomOf="@+id/ivOB1" />
+
+    <TextView
+        android:id="@+id/tvNowPlayingDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/now_playing_desc"
+        android:gravity="center"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/ivOB1"
+        app:layout_constraintStart_toStartOf="@+id/ivOB1"
+        app:layout_constraintTop_toBottomOf="@+id/tvNowPlaying" />
+
+    <Button
+        android:id="@+id/btnSkip"
+        style="@style/Widget.MaterialComponents.FloatingActionButton"
+        android:layout_width="0dp"
+        android:paddingVertical="16dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="@color/blue_grey"
+        android:text="@string/skip_intro"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnNext"
+        style="@style/Widget.MaterialComponents.FloatingActionButton"
+        android:layout_width="0dp"
+        android:paddingVertical="16dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/pink"
+        android:text="@string/next"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/btnSkip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
