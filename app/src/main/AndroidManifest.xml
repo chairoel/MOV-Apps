@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BWAMov">
         <activity
+            android:name=".SignUpPhotoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SignInActivity"
+            android:exported="false" />
+        <activity
             android:name=".onboarding.OnboardingThreeActivity"
             android:exported="false" />
         <activity
