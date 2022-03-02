@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BWAMov">
         <activity
+            android:name=".ChooseSeatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DetailActivity"
+            android:exported="false" />
+        <activity
             android:name=".SignUpPhotoActivity"
             android:exported="false" />
         <activity
